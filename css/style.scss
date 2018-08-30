@@ -1,0 +1,55 @@
+$DarkGreen: #00585E; // Dark green
+$LightGreen: #009494; // Light green
+$LightGrey: #F5F2DC; // Light grey
+$DarkGrey: #454445; // Dark grey
+$orange: #FF5729; // Orange
+
+body {
+
+  color: $DarkGrey;
+
+}
+
+.border-light {
+
+  border: 1px solid $LightGrey;
+
+}
+
+#wrapper {
+
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%;
+  background-color: $orange;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+#InputArr {
+
+  padding: 10px;
+  text-align: center;
+  background-color: $LightGreen;
+
+}
+
+#CalcBtn {
+
+  width: 100%;
+  padding: 10px;
+  background-color: $DarkGreen;
+  color: $LightGrey;
+
+}
+
+#CalcResponse {
+
+  width: 98%;
+  min-height: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: $LightGreen;
+
+}
