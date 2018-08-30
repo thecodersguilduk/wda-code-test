@@ -1,0 +1,9 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p, button {
+  margin: 0;
+  text-align: center;
+}
