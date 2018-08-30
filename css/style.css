@@ -1,0 +1,59 @@
+/*
+
+Brand1 – #00585E
+Brand2 - #009494
+Brand3 - #F5F2DC
+Brand4 - #454445
+Brand5 - #FF5729
+
+ */
+
+body {
+
+  color: #454445;
+
+}
+
+.border-light {
+
+  border: 1px solid #F5F2DC;
+
+}
+
+#wrapper {
+
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%;
+  background-color: #FF5729;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+#InputArr {
+
+  padding: 10px;
+  text-align: center;
+  background-color: #009494;
+
+}
+
+#CalcBtn {
+
+  width: 100%;
+  padding: 10px;
+  background-color: #00585E;
+  color: #F5F2DC;
+
+}
+
+#CalcResponse {
+
+  width: 98%;
+  min-height: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #009494;
+
+}
