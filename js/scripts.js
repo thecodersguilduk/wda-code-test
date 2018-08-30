@@ -10,8 +10,9 @@ var arrayLength = integerTypeArray.length;
 var sum = integerTypeArray.reduce((a, b) => a + parseInt(b), 0);
 
 var average = sum / arrayLength;
+var finalAnswer = average.toFixed(7);
 
-  document.getElementById('result').innerHTML = average;
+  document.getElementById('result').innerHTML = finalAnswer;
 
 console.log(integerTypeArray);
 console.log(sum);
@@ -20,5 +21,5 @@ console.log(average);
 }
 
 function clear() {
-  document.getElementById('result').innerHTML = 'a';
+  document.getElementById('result').append = 'a';
 }
