@@ -1,6 +1,6 @@
 /**
  * Calculates the average of a set of numbers in a given array.
- * 
+ *
  * @param DataArr An array containing data to be calculated.
  * @constructor
  */
