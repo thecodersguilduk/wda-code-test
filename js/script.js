@@ -1,6 +1,7 @@
 /**
  * Calculates the average of a set of numbers in a given array.
- * @param DataArr An array containing data to be calculated
+ * 
+ * @param DataArr An array containing data to be calculated.
  * @constructor
  */
 
@@ -8,10 +9,9 @@ function CalculateAverage(DataArr) {
 
     this.DataArr = DataArr; // the input array
 
-    this.FilteredArr; // array with all the invalid entries removed
-
     /**
-     * Filter anything that is not a number out of the array
+     * Filter anything that is not a number out of the array.
+     *
      * @constructor
      */
 
@@ -31,13 +31,15 @@ function CalculateAverage(DataArr) {
 
         }
 
-    this.FilteredArr = FilteredDataArr;
+        return FilteredDataArr;
 
     };
 
     /**
-     * Calculate the average sum of all the numbers in the array.
-     * @returns {string}
+     * Calculate the average sum of all the numbers in the array. Logs a message to the javascript console
+     * on error.
+     *
+     * @returns {string} The average number or an error message.
      * @constructor
      */
 
@@ -45,11 +47,11 @@ function CalculateAverage(DataArr) {
 
         try {
 
-            this.FilterArr();
+            var FilteredArr = this.FilterArr();
 
-            var FilteredArrLength = this.FilteredArr.length;
+            var FilteredArrLength = FilteredArr.length;
 
-            var total = this.FilteredArr.reduce(AddNums); // add the numbers together using the AddNums function
+            var total = FilteredArr.reduce(AddNums); // add the numbers together using the AddNums function
 
             var avg = total / FilteredArrLength;
 
