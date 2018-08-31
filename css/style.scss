@@ -18,19 +18,15 @@ body {
 
 #wrapper {
 
-  padding: 10px;
   margin: 0 auto;
   width: 80%;
   background-color: $orange;
   border-radius: 10px;
-  text-align: center;
 
 }
 
 #InputArr {
 
-  padding: 10px;
-  text-align: center;
   background-color: $LightGreen;
 
 }
@@ -38,7 +34,6 @@ body {
 #CalcBtn {
 
   width: 100%;
-  padding: 10px;
   background-color: $DarkGreen;
   color: $LightGrey;
 
@@ -48,8 +43,18 @@ body {
 
   width: 98%;
   min-height: 20px;
-  padding: 10px;
-  text-align: center;
   background-color: $LightGreen;
+
+}
+
+.padding-10 {
+
+  padding: 10px;
+
+}
+
+.text-align-center {
+
+  text-align: center;
 
 }
