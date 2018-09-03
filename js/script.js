@@ -1,5 +1,5 @@
 /**
- * Calculates the average of a set of numbers in a given array.
+ * Filters out invalid values and calculates the average of a set of numbers in a given array.
  *
  * @param DataArr An array containing data to be calculated.
  * @constructor
@@ -10,8 +10,6 @@ function CalculateAverage(DataArr) {
     this.DataArr = DataArr; // the input array
 
     var that = this;
-
-
 
     /**
      * Filter anything that is not a number out of the array.
@@ -94,6 +92,5 @@ window.onload = function() {
     document.getElementById("InputArr").innerHTML = OriginalDataArr.toString();
 
     new CalculateAverage(OriginalDataArr);
-
 
 };
