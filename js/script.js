@@ -9,6 +9,10 @@ function CalculateAverage(DataArr) {
 
     this.DataArr = DataArr; // the input array
 
+    var that = this;
+
+
+
     /**
      * Filter anything that is not a number out of the array.
      *
@@ -73,6 +77,14 @@ function CalculateAverage(DataArr) {
 
     }
 
+    document.getElementById("CalcBtn").addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        document.getElementById("CalcResponse").innerHTML = that.CalculateAvg();
+
+    });
+
 }
 
 window.onload = function() {
@@ -81,14 +93,7 @@ window.onload = function() {
 
     document.getElementById("InputArr").innerHTML = OriginalDataArr.toString();
 
-    document.getElementById("CalcBtn").addEventListener("click", function(e) {
+    new CalculateAverage(OriginalDataArr);
 
-        e.preventDefault();
-
-        var AvgCalculator = new CalculateAverage(OriginalDataArr);
-
-        document.getElementById("CalcResponse").innerHTML = AvgCalculator.CalculateAvg();
-
-    });
 
 };
