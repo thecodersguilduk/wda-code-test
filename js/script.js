@@ -83,14 +83,14 @@ function CalculateAverage(DataArr) {
 
     });
 
+    /* output the input array to the page as a string */
+
+    document.getElementById("InputArr").innerHTML = this.DataArr.toString();
+
 }
 
 window.onload = function() {
 
-    var OriginalDataArr = [3,7,'df','3',7,8,'df',23,6,2,67,'g','34',12,34,5];
-
-    document.getElementById("InputArr").innerHTML = OriginalDataArr.toString();
-
-    new CalculateAverage(OriginalDataArr);
+    new CalculateAverage([3,7,'df','3',7,8,'df',23,6,2,67,'g','34',12,34,5]);
 
 };
