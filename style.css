@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --brand1: #00585E;
+    --brand2: #009494;
+    --brand3: #F5F2DC;
+    --brand4: #454445;
+    --brand5: #FF5729;
+}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the content */
+.content {
+background-color: var(--brand1);
+padding: 10px;
+width: 400px;
+height: 200px;
+position: absolute;
+left: 50%;
+margin-left: -200px;
+top: 50%;
+margin-top: -100px;
+text-align: center;
+}
