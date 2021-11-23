@@ -1,0 +1,20 @@
+body {
+    background-color: #009494;
+}
+
+p {
+    color:  #F5F2DC;   
+}
+
+h3 {
+    color: #00585E;
+}
+
+button {
+    background-color: #454445;
+    color: #F5F2DC;
+}
+
+button:hover {
+    color: #FF5729;
+}

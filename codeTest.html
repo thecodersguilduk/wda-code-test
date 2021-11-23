@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="CodeTestCSS.css">
+		<title>Average of Array</title>
+	</head>
+	<body>
+
+        <div>
+            <h3>Code Test:</h3>
+            <p>To calculate the average of array [3,7,'df','3',7,8,'df',23,6,2,67,'g','34',12,34,5]</p>
+            <p>Click the button below to calculate the average:</p>
+        </div>
+
+        <button onclick="calculateAverage(array)">Calculate Average</button>
+
+        <div id="outputs">
+            <p>
+                Sum of all numbers: <span id="sum"></span><br>
+                Number to divide the total by: <span id="numberCount"></span><br>
+                Answer: <span id="answer"></span> <br>
+            </p>
+
+        </div>   
+
+        <button onclick="clearDisplays()">Clear displays</button>
+    
+        <p>**Note - CSS is not generated using SCSS as i have never worked with this before. I will hopefully have time in the next few days to learn this - if so then i will update this project.</p>
+        
+    </body>
+
+<script>
+
+    let array = [3,7,'df','3',7,8,'df',23,6,2,67,'g','34',12,34,5];
+    
+    let totalSum = 0;
+    let numberCount = 0;
+    let answer = 0;
+    
+    function calculateAverage (arrayInput) {
+
+        totalSum = 0;
+        numberCount = 0;
+        answer = 0;
+
+            for (let i = 0; i < arrayInput.length; i++) {
+
+                if (isNaN(Number(arrayInput[i]))) {
+                    continue;
+                } else {
+                    totalSum += Number(arrayInput[i]);
+                    numberCount += 1;
+                }
+            };
+
+        answer = (totalSum / numberCount).toFixed(7);
+        displays();
+    };
+
+    const clearDisplays = () => {
+        totalSum = "";
+        numberCount = "";
+        answer = "";
+        displays();
+    };
+
+    const displays = () => {
+        displayAnswer();
+        displayTotalSum();
+        displayNumberCount();
+    };
+
+    const displayAnswer = () => {
+        return document.getElementById('answer').textContent = `${answer}`;
+    };
+    
+    const displayTotalSum = () => {
+        return document.getElementById('sum').textContent = `${totalSum}`;
+    };
+
+    const displayNumberCount = () => {
+        return document.getElementById('numberCount').textContent = `${numberCount}`;
+    };
+    
+</script>
+
+</html>
