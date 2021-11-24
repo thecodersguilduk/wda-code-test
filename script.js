@@ -9,9 +9,9 @@ function init() {
                     .replace(/[A-z]/g, "") 
                     // Split string into an array of substrings
                     .split(",")
-                    // Filter a new array filled with array items that pass the test function
+                    // Filter new array containing only strings filled with numbers
                     .filter(item => item !== "") 
-                    // Map a new array from calling a function on every array item
+                    // Map new array containing only integers   
                     .map(item => parseInt(item));
         
         return average(nums);

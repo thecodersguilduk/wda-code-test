@@ -158,14 +158,14 @@ body {
     justify-content: space-around;
     flex-direction: column; }
     .outer-box .inner-box button {
-      background-color: white;
-      color: black;
+      background-color: var(--brand3);
+      color: var(--brand4);
       font-size: 2em;
       border-radius: 20px;
       width: 200px;
       height: 100px; }
       .outer-box .inner-box button:hover {
-        background-color: black;
-        color: white; }
+        background-color: var(--brand4);
+        color: var(--brand3); }
 
 /*# sourceMappingURL=style.css.map */

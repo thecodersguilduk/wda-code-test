@@ -38,16 +38,16 @@ font-size: small;
         flex-direction: column;
 
         button {
-            background-color: white;
-            color: black;
+            background-color: var(--brand3);
+            color: var(--brand4);
             font-size: 2em;
             border-radius: 20px;
             width: 200px;
             height: 100px;
 
             &:hover {
-                background-color: black;
-                color: white;
+                background-color: var(--brand4);
+                color: var(--brand3);
             } 
         }
     }
