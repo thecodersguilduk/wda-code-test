@@ -57,8 +57,7 @@ if (Array.isArray(inputArray)) {            //check whether input is an array
     button.classList.remove('omit');
     button.addEventListener('click', () => { process() });
 
-} else {    
-    readout1.classList.remove('omit');
+} else {        
     readout1.classList.remove('omit');    // reveal readout 1 if input value isn't an array
 }
 
