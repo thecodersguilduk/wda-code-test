@@ -1,0 +1,86 @@
+:root {
+  --col1: #00585E;
+  --col2: #009494;
+  --col3: #F5F2DC;
+  --col4: #454445;
+  --col5: #FF5729;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: var(--col3);
+  color: var(--col4);
+}
+
+/* creates equal margin to the left and right*/
+main {
+  width: 80%;
+  margin: auto;
+}
+
+/* title */
+h1 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 2rem auto;
+  white-space: nowrap;
+}
+
+/* output messages */
+h3 {
+  padding: 0.5rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+/* display lists - flex containers*/
+#topList,
+#lowerList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#topList div,
+#lowerList div {
+  /* display lists - flex items */
+  padding: 0.5rem;
+  margin: 2px;
+  border: 1px solid var(--col4);
+  background: var(--col5);
+}
+
+/* button */
+button {
+  font: inherit;
+  display: inline-block;
+  padding: 1rem;
+  background: var(--col1);
+  color: var(--col3);
+  margin: 2rem 0rem;
+  -webkit-box-shadow: 2px 2px 2px #0009;
+          box-shadow: 2px 2px 2px #0009;
+  border-radius: 8%;
+  border: none;
+}
+
+button:hover {
+  /* display lists - flex items */
+  cursor: pointer;
+  background: var(--col2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* applied to elements that are temporarily omitted from the page */
+.omit {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */

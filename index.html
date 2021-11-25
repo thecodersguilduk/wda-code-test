@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+        <h1>Calculate the Average</h1>
+
+        <p>Input List:</p>
+        <section id="topList"></section>            <!-- shows content of the original array -->
+        <h3 id="readout1" class="omit">Unable to calculate. Input is not an array.</h3>         <!-- becomes visible if input is not an array -->
+        <button class="omit">Calculate</button>     <!-- button which becomes visible if input is an array-->
+                
+        <div id='lowerframe' class="omit">         <!-- lowerframe - is not visible until button is pressed -->
+            <p>Processed List:</p>
+            <section id="lowerList"></section>     <!-- shows content of the array after processing -->                 
+            <h3 id="readout2"></h3>                <!-- shows the result or error message -->
+        </div>
+
+    </main>
+
+</body>
+</html>
