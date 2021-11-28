@@ -1,0 +1,113 @@
+$Brand1: #00585E;
+$Brand2: #009494;
+$Brand3 :#F5F2DC;
+$Brand4: #454445;
+$Brand5: #FF5729;
+$fontfam: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+
+.container {
+
+display: grid;
+grid-area: auto;
+grid-template-columns: 110px auto auto auto 110px;
+grid-template-rows: 100px auto auto 100px;
+height: 100vh;
+grid-gap: 2px;
+
+
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 5;
+    background: $Brand4;
+    color: $Brand3;
+    font-family: $fontfam;
+    font-size: 30px;
+}
+
+.side-bar-left {
+
+    grid-row: span 2;
+    background: $Brand4;
+}
+
+.main-content-top{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-column: span 3;
+    grid-row: span 1;
+    background: $Brand1;
+    
+}
+
+.main-content-bot{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-column: span 3;
+    grid-row: span 1;
+    background: $Brand2;
+    color: $Brand3;
+   
+}
+
+.side-bar-right {
+
+    grid-row: span 2;
+    background: $Brand4;
+}
+
+.footer{
+    
+    grid-column: span 5;
+    background: $Brand4;
+    
+}
+.btnCalc{
+
+    background: $Brand5;
+    color: $Brand3;
+    border:none;
+    border-radius: 8px;
+    font-size: 20px;
+    display: inline;
+    padding: 26px 20px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    
+}
+.btnCalchover:hover{
+    background: darken($color: $Brand5, $amount: 20);
+    color: $Brand3;
+
+}
+h1 {
+    text-align: center;
+    font-family: $fontfam;
+    font-size: 25px;
+    color: $Brand3;
+}
+h2 {
+    text-align: center;
+    font-family: $fontfam;
+    font-size: 20px;
+    color: $Brand3;
+    padding-bottom: 20px;
+
+}
+.results{
+    font-family: $fontfam;
+    font-size: 20px;
+}
