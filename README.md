@@ -13,11 +13,12 @@ should just have HTML and some CSS generated from SCSS and the javascript should
 (no libraries).
 
 Colours that should be included:
-* Brand1 – #00585E
-* Brand2 - #009494
-* Brand3 - #F5F2DC
-* Brand4 - #454445
-* Brand5 - #FF5729
+
+- Brand1 – #00585E
+- Brand2 - #009494
+- Brand3 - #F5F2DC
+- Brand4 - #454445
+- Brand5 - #FF5729
 
 Detail is important, so it's a small task, but the detail could be enhanced with additional code for
 ensuring the stability of parts of the system.

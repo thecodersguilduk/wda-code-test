@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+}
+
+/* .............essential styling below......... */
+
+/* backgrounds */
+.brand1 {
+  background-color: #00585e;
+}
+.brand2 {
+  background-color: #009494;
+}
+.brand3 {
+  background-color: #f5f2dc;
+}
+.brand4 {
+  background-color: #454445;
+}
+.brand5 {
+  background-color: #ff5729;
+}
+
+/* colors */
+.brand1color {
+  color: #00585e;
+}
+.brand2color {
+  color: #009494;
+}
+.brand3color {
+  color: #f5f2dc;
+}
+.brand4color {
+  color: #454445;
+}
+.brand5color {
+  color: #ff5729;
+}
+
+/* .............custom styling below......... */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+.flex-item {
+  flex: 50%;
+}
+.flex-wrap-container {
+  display: flex;
+  align-items: center;
+}
+.flex-center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-div > input {
+  width: 40%;
+}
+/* Animations */
+.animate-div:hover {
+  background-color: #097c85;
+  cursor: pointer;
+  -webkit-transition: background-color ease-out;
+  -moz-transition: background-color ease-out;
+  -o-transition: background-color ease-out;
+  transition: background-color ease-out;
+}
+/* margin */
+.marg-0 {
+  margin-bottom: 0;
+}
+.marg-10 {
+  margin-bottom: 10px;
+}
+.marg-20 {
+  margin-bottom: 25px;
+}
+.marg-top-30 {
+  margin-top: 25px;
+}
+
+/* padding */
+.pad-0 {
+  padding-bottom: 0;
+}
+.pad-1 {
+  padding-bottom: 1px;
+}
+.pad-5 {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.pad-10 {
+  padding-top: 4%;
+}
+
+.pad-left-5 {
+  padding-left: 5px;
+}
+.pad-right-5 {
+  padding-right: 5px;
+}
+
+/* font */
+.heading {
+  font-size: 2em;
+}
+.text-size-10 {
+  font-size: 20px;
+}

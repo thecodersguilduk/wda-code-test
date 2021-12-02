@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script src="src/js/index.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="top brand3 pad-5 marg-10">
+      <p class="heading marg-0 brand1color">Promedio</p>
+      <i class="brand4color"><b>Helping you to calculate the average</b></i>
+    </div>
+
+    <!-- Array Display -->
+    <div class="flex-container pad-5 marg-top-30">
+      <div class="flex-item">
+        <h2 class="pad-5">Average matters.</h2>
+        <p class="pad-left-5 pad-right-5 brand4color">
+          Hover over the array on the right to glance at the average. Click to
+          keep viewing the result
+        </p>
+      </div>
+      <div class="flex-item flex-container brand2 animate-div">
+        <div
+          id="arrayDisplay"
+          class="flex-center-container brand3color text-size-10 pad-5"
+        >
+          <p>[3,7,'df','3',7,8,'df',23,6,2,67,'g','34',12,34,5]</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result / average display -->
+    <div
+      id="resultResult"
+      class="flex-center-container brand3 brand4color text-size-10 pad-5 marg-20"
+    >
+      <div>Result is display here</div>
+    </div>
+
+    <!-- User input -->
+    <div class="marg-top-30">
+      <div class="flex-wrap-container">
+        <h3 class="brand4color pad-5">Why not use your own Array?</h3>
+      </div>
+      <div class="form-div brand3 pad-5">
+        <p>Enter numbers in the textarea below separated by commas:</p>
+        <input id="arrayInput" type="text" required />
+        <!-- input processing is triggered inside index.js -->
+        <button type="button" id="submitInput">Submit</button>
+        <!-- below is a placeholder 'span' to showcase 'brand5' color-->
+        <p id="userResult"><span class="brand5color">Input required</span></p>
+      </div>
+    </div>
+  </body>
+</html>
