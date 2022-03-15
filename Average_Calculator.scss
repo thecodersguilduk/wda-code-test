@@ -1,0 +1,58 @@
+/*These are the variables for the 5 brands so that I can reuse them later*/
+$brand1: #00585E;
+$brand2: #009494;
+$brand3: #F5F2DC;
+$brand4: #454445;
+$brand5: #FF5729;
+
+/*The main body of the page that holds everthing*/
+body {
+  background-color: $brand3;
+
+  /*The container holds all the styling for the elements like the header, input and buttons*/
+  #container{
+    background-color: $brand2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $brand3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 60%;
+    border: 4px solid $brand1;
+    padding: 10px;
+    text-align: center;
+  
+    /*The styling for the input tag that holds the array.*/
+    #num{
+      width: 30%;
+      color: $brand2;
+      background-color: $brand3;
+      border: $brand1;
+      font-weight: bold;
+    }
+  
+    /*The styling for the button that calculates the average of the input.*/
+    #calculate{
+      background-color: $brand3;
+      border: none;
+      border-radius: 3px;
+      color: $brand2;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+      margin: 15px 0px 0px 5px;
+      transition: .4s ease-in-out 0s;
+    }
+    /*The styling for the calculate button when you hover over it*/
+    #calculate:hover{
+      transform: scale(1.25);
+      cursor: pointer;
+      background-color: $brand5;
+      color: $brand4;
+      font-weight: bolder;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <!--This is the link that connects the HTML to the CSS styling-->
+    <link rel="stylesheet" type="text/css" href="Average_Calculator.css"/>
+    <head>
+        <title>Average Calculate</title>
+    </head>
+    <body>
+        <!--This div tag is given an id so that it can be used in the css for styling-->
+        <div id="container">
+            <div>
+                <h1>Calculate the Average</h1>
+                <p>To calculate the average click the button below</p>
+            </div>
+            <div>
+                <label for="lname">Array:</label>
+                <!--
+                    The input tag holds the array given as its value for it to be used later on,
+                    the id is used to identify the tag in both the css and javascript files for 
+                    it to be used.
+                -->
+                <input type="text" id="num" name="numbers" value="3,7,'df','3',7,8,'df',23,6,2,67,'g','34',12,34,5" readonly>
+            </div>
+            <div>
+                <!--
+                    The button has an id so that it can be identified in the css page for styling.
+                    It also has an onclick event that calls the javascript function, this function
+                    works out the average of the array.
+                -->
+                <button id="calculate" onclick="calculate_average(); this.disabled = true;">Calculate Average</button>
+            </div>
+            <div>
+                <!--
+                    This <p> tag is used in the javascript to append and display the average in
+                    the HTML page once the button is clicked.
+                -->
+                <p id="average"></p>
+            </div>
+        </div>
+    </body>
+    <!--The script tag holds the link that connects the HTML to the Javascript-->
+    <Script src="Average_Calculator.js"></Script>
+</html>

@@ -1,0 +1,56 @@
+/*These are the variables for the 5 brands so that I can reuse them later*/
+/*The main body of the page that holds everthing*/
+body {
+  background-color: #F5F2DC;
+  /*The container holds all the styling for the elements like the header, input and buttons*/
+}
+
+body #container {
+  background-color: #009494;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #F5F2DC;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 60%;
+  border: 4px solid #00585E;
+  padding: 10px;
+  text-align: center;
+  /*The styling for the input tag that holds the array.*/
+  /*The styling for the button that calculates the average of the input.*/
+  /*The styling for the calculate button when you hover over it*/
+}
+
+body #container #num {
+  width: 30%;
+  color: #009494;
+  background-color: #F5F2DC;
+  border: #00585E;
+  font-weight: bold;
+}
+
+body #container #calculate {
+  background-color: #F5F2DC;
+  border: none;
+  border-radius: 3px;
+  color: #009494;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  margin: 15px 0px 0px 5px;
+  -webkit-transition: .4s ease-in-out 0s;
+  transition: .4s ease-in-out 0s;
+}
+
+body #container #calculate:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  cursor: pointer;
+  background-color: #FF5729;
+  color: #454445;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=Average_Calculator.css.map */
