@@ -1,0 +1,16 @@
+let array = [3,7,'df','3',7,8,'df',23,6,2,67,'g','34',12,34,5];
+let count = 0;
+let total = 0;
+
+
+function filterArray(){
+    document.getElementById("u").innerHTML = "changed";
+}
+for(let i = 0; i < array.length; i++){
+    if(array[i] !== undefined){
+        count++;
+        total += array[i];
+    }
+}
+let avg = total / count;
+console.log(avg);

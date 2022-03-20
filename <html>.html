@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = "a">
+            <p id = "u">hi</p>
+        </div>
+        <div class = "ok">
+            <p id = "u2">ANSWER</p>
+        </div>
+    <div class = "b">
+    <button onclick = "displayAverage()">Find Average</button>
+    </div>
+
+    <script>
+        let array = [3,7,'df','3',7,8,'df',23,6,2,67,'g','34',12,34,5];
+        document.getElementById("u").innerHTML = "" + array;
+        
+    function displayAverage(){
+        for(let i = 0; i < array.length; i++){
+            array[i] = array[i].toString().replace('','');
+            let total = 0;
+            array = array.filter(number => {
+                return !isNaN(parseInt(number));
+            });
+            for (let i = 0; i < array.length; i++){
+                total+=parseInt(array[i]);
+            }
+            const avg = total / array.length;
+            console.log(avg);
+    
+        document.getElementById("u2").innerHTML = "" + avg;
+        
+    }
+
+        
+    }</script>
+    </body>
+</html>
